@@ -7,6 +7,7 @@ import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 
 import Sidebar from "./Components/Sidebar/Sidebar";
+import SearchBar from "./Components/SearchBar/SearchBar";
 
 function App() {
   return (
@@ -18,9 +19,11 @@ function App() {
         width: "1300px",
         borderRadius: "20px",
         padding: "0px",
+        display: "flex",
       }}
     >
       <Sidebar />
+      <SearchBar />
     </Container>
   );
 }
