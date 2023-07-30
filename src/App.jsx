@@ -13,6 +13,7 @@ import MyCard from "./Components/Cards/Cards";
 import MyCard2 from "./Components/Cards/Cards2";
 import Calendar from "./Components/Calendar/Calendar";
 import Chart from "./Components/Chart/Chart";
+import Chart2 from "./Components/Chart/Chart2";
 
 function App() {
   return (
@@ -71,6 +72,9 @@ function App() {
       </div>
       <div style={{ gridColumn: 2, gridRow: 4 }}>
         <Chart></Chart>
+      </div>
+      <div style={{ gridColumn: 3, gridRow: 4 }}>
+        <Chart2></Chart2>
       </div>
     </Container>
   );

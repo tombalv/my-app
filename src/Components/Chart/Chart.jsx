@@ -18,7 +18,7 @@ const StyledIconButton = withStyles(() => ({
   },
 }))(IconButton);
 
-function MyBarChart() {
+function Chart() {
   return (
     <div
       style={{
@@ -66,7 +66,7 @@ function MyBarChart() {
               style={{
                 color: "12a5bc",
                 fontSize: "15px",
-                margin: "0px 0px 10px 15px",
+                margin: "0px 0px 15px 15px",
               }}
             />
           </Badge>
@@ -115,7 +115,7 @@ function MyBarChart() {
             <FaDollarSign
               style={{
                 fontSize: "15px",
-                margin: "0px 0px 10px 15px",
+                margin: "0px 0px 18px 15px",
                 color: "#aaaaaa",
               }}
             />
@@ -159,9 +159,11 @@ function MyBarChart() {
           transform: "scaleY(0.1)",
         }}
       ></div>
-      <div></div>
+      <div>
+        <div>$10k $50k</div>
+      </div>
     </div>
   );
 }
 
-export default MyBarChart;
+export default Chart;
