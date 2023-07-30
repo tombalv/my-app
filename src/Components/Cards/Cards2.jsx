@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  Card,
-  CardContent,
-  withStyles,
-  IconButton,
-  Badge,
-} from "@material-ui/core";
+import { Card, CardContent, withStyles, IconButton } from "@material-ui/core";
 import InventoryIcon from "@mui/icons-material/Inventory";
 import SupervisedUserCircleIcon from "@mui/icons-material/SupervisedUserCircle";
 import NorthEastIcon from "@mui/icons-material/NorthEast";

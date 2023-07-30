@@ -8,9 +8,8 @@ const useStyles = makeStyles({
     margin: "10px 0px 0px 20px",
     width: "320px",
     "& .MuiOutlinedInput-input": {
-      height: "40px", // Keičiame aukštį
-      padding: "0 14px", // Keičiame vidinį atitraukimą, kad tekstas sutilptų
-      border: "none",
+      height: "40px",
+      padding: "0 14px",
     },
     "& .MuiOutlinedInput-root": {
       backgroundColor: "#f1f1f1",

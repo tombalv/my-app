@@ -1,46 +1,13 @@
 import React from "react";
 import {
-  Button,
-  TextField,
-  Grid,
-  Accordion as MuiAccordion,
-  AccordionSummary,
-  AccordionDetails as MuiAccordionDetails,
   Badge as MaterialBadge,
   IconButton,
   withStyles,
+  Typography,
+  Avatar,
 } from "@material-ui/core";
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 import NotificationsIcon from "@mui/icons-material/Notifications";
-
-const Accordion = withStyles({
-  root: {
-    marginTop: "10px",
-    borderRadius: "50px",
-    backgroundColor: "#f1f1f1",
-    border: "none",
-    boxShadow: "none",
-    "&:not(:last-child)": {
-      borderBottom: 0,
-    },
-    "&:before": {
-      display: "none",
-    },
-    "&$expanded": {
-      margin: "auto",
-    },
-  },
-  expanded: {},
-})(MuiAccordion);
-
-const AccordionDetails = withStyles((theme) => ({
-  root: {
-    border: "none",
-    borderRadius: "0px",
-    backgroundColor: "#f1f1f1",
-  },
-}))(MuiAccordionDetails);
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 const StyledBadge = withStyles((theme) => ({
   badge: {
@@ -53,13 +20,6 @@ const StyledBadge = withStyles((theme) => ({
     minWidth: "3px",
   },
 }))(MaterialBadge);
-const StyledTextField = withStyles({
-  root: {
-    "& .MuiOutlinedInput-root": {
-      borderRadius: "20px",
-    },
-  },
-})(TextField);
 
 const StyledIconButton = withStyles(() => ({
   root: {
@@ -67,7 +27,7 @@ const StyledIconButton = withStyles(() => ({
     width: "40px",
     marginTop: "15px",
     marginRight: "20px",
-    backgroundColor: "#f1f1f1",
+    backgroundColor: "#e9e7e7",
 
     "&:hover": {
       backgroundColor: "#f1f1f1",
@@ -77,46 +37,35 @@ const StyledIconButton = withStyles(() => ({
 
 function ContactForm() {
   return (
-    <Grid container justifyContent="flex-end">
-      <Grid item xs={12} sm={6}>
-        <Accordion>
-          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-            <AccountCircleIcon fontSize="small" />
-            Contact Us
-          </AccordionSummary>
-          <AccordionDetails>
-            <form noValidate autoComplete="off">
-              <StyledTextField
-                label="Name"
-                variant="outlined"
-                fullWidth
-                style={{ marginBottom: "1em" }}
-              />
-              <StyledTextField
-                label="Email"
-                variant="outlined"
-                fullWidth
-                style={{ marginBottom: "1em" }}
-              />
-              <StyledTextField
-                label="Message"
-                variant="outlined"
-                multiline
-                fullWidth
-                style={{ marginBottom: "1em" }}
-              />
-              <Button
-                variant="contained"
-                color="primary"
-                type="submit"
-                size="medium"
-              >
-                Submit
-              </Button>
-            </form>
-          </AccordionDetails>
-        </Accordion>
-      </Grid>
+    <div style={{ display: "flex", justifyContent: "flex-end" }}>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          borderRadius: "20px",
+          backgroundColor: "#f1f1f1",
+          height: "40px",
+          width: "180px",
+          marginTop: "15px",
+        }}
+      >
+        <Avatar alt="Maxie Mon Wachid" src="./images/human.jpg" />
+        <div style={{ marginLeft: "10px" }}>
+          <Typography style={{ fontSize: "11px" }} variant="body1">
+            Maxie Mon Wachid
+          </Typography>
+          <Typography
+            style={{ fontSize: "8px", color: "#aaaaaa" }}
+            variant="body2"
+          >
+            @Maxie Mon Wachid
+          </Typography>
+        </div>
+
+        <KeyboardArrowDownIcon
+          style={{ fontSize: "13px", marginLeft: "10px" }}
+        />
+      </div>
       <hr
         style={{
           height: "25%",
@@ -136,7 +85,7 @@ function ContactForm() {
           <NotificationsIcon style={{ fontSize: "20px", color: "#a1b2bf" }} />
         </StyledBadge>
       </StyledIconButton>
-    </Grid>
+    </div>
   );
 }
 

@@ -1,5 +1,6 @@
 import React from "react";
 import { Switch } from "@material-ui/core";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import NightlightRoundOutlinedIcon from "@mui/icons-material/NightlightRoundOutlined";
 import DashboardIcon from "@mui/icons-material/Dashboard";
 import Inventory2Icon from "@mui/icons-material/Inventory2";
@@ -15,12 +16,12 @@ import "./Sidebar.css";
 
 const StyledBadge = withStyles((theme) => ({
   badge: {
-    backgroundColor: "#ff0000", // Raudona spalva
+    backgroundColor: "#ff0000",
     color: "#fff",
-    height: "20px", // Padidinti taško dydį
-    width: "20px", // Padidinti taško dydį
-    borderRadius: "50%", // Padaryti tašką apvalų
-    display: "flex", // Centruoti skaičių taške
+    height: "20px",
+    width: "20px",
+    borderRadius: "50%",
+    display: "flex",
     justifyContent: "center",
     alignItems: "center",
   },
@@ -59,7 +60,10 @@ const Sidebar = () => {
         </li>
         <li className="light-mode">
           <BarChartIcon fontSize="small" />
-          <span className="words_position">Analytics</span>
+          <span className="words_position">Analytics </span>
+          <KeyboardArrowDownIcon
+            style={{ color: "#aaaaaa", fontSize: "15px", marginLeft: "60px" }}
+          />
         </li>
         <li className="light-mode">
           <NotificationsNoneIcon fontSize="small" />

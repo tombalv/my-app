@@ -11,6 +11,7 @@ import SearchBar from "./Components/SearchBar/SearchBar";
 import ContactForm from "./Components/ContactForm/ContactForm";
 import MyCard from "./Components/Cards/Cards";
 import MyCard2 from "./Components/Cards/Cards2";
+import Calendar from "./Components/Calendar/Calendar";
 
 function App() {
   return (
@@ -57,6 +58,9 @@ function App() {
       </p>
 
       <ContactForm style={{ gridColumn: 3, gridRow: 1 }}></ContactForm>
+      <div style={{ gridColumn: 3, gridRow: 2 }}>
+        <Calendar></Calendar>
+      </div>
 
       <div style={{ gridColumn: 3, gridRow: 3 }}>
         <MyCard2></MyCard2>
