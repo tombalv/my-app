@@ -6,7 +6,7 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles({
   root: {
     margin: "10px 0px 0px 20px",
-    width: "330px",
+    width: "320px",
     "& .MuiOutlinedInput-input": {
       height: "40px", // Keičiame aukštį
       padding: "0 14px", // Keičiame vidinį atitraukimą, kad tekstas sutilptų

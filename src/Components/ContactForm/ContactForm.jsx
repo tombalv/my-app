@@ -126,14 +126,14 @@ function ContactForm() {
       />
       <StyledIconButton color="primary">
         <StyledBadge
-          overlap="circle"
+          overlap="circular"
           anchorOrigin={{
             vertical: "top",
             horizontal: "right",
           }}
           variant="dot"
         >
-          <NotificationsIcon />
+          <NotificationsIcon style={{ fontSize: "20px", color: "#a1b2bf" }} />
         </StyledBadge>
       </StyledIconButton>
     </Grid>

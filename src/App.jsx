@@ -9,6 +9,8 @@ import "@fontsource/roboto/700.css";
 import Sidebar from "./Components/Sidebar/Sidebar";
 import SearchBar from "./Components/SearchBar/SearchBar";
 import ContactForm from "./Components/ContactForm/ContactForm";
+import MyCard from "./Components/Cards/Cards";
+import MyCard2 from "./Components/Cards/Cards2";
 
 function App() {
   return (
@@ -21,11 +23,11 @@ function App() {
         borderRadius: "20px",
         padding: "0px",
         display: "grid",
-        gridTemplateColumns: "0.4fr 1.3fr 1fr",
+        gridTemplateColumns: "0.4fr 1fr 1fr",
         gridTemplateRows: "80px 90px 140px 1fr",
       }}
     >
-      <div style={{ display: "grid", gridTemplateColumns: "auto auto" }}>
+      <div style={{ display: "grid" }}>
         <Sidebar style={{ gridColumn: 1 }} />
       </div>
 
@@ -54,8 +56,17 @@ function App() {
         results
       </p>
 
-      <ContactForm style={{ gridColumn: 3, gridRow: 1 }}>Kontaktai</ContactForm>
-      <h3 style={{ gridColumn: 3, gridRow: 3 }}>App</h3>
+      <ContactForm style={{ gridColumn: 3, gridRow: 1 }}></ContactForm>
+
+      <div style={{ gridColumn: 3, gridRow: 3 }}>
+        <MyCard2></MyCard2>
+      </div>
+      <div style={{ gridColumn: 2, gridRow: 3 }}>
+        <MyCard></MyCard>
+      </div>
+      <div style={{ gridColumn: 2, gridRow: 4 }}>
+        <h3>App</h3>
+      </div>
     </Container>
   );
 }
