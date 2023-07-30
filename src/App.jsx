@@ -12,6 +12,7 @@ import ContactForm from "./Components/ContactForm/ContactForm";
 import MyCard from "./Components/Cards/Cards";
 import MyCard2 from "./Components/Cards/Cards2";
 import Calendar from "./Components/Calendar/Calendar";
+import Chart from "./Components/Chart/Chart";
 
 function App() {
   return (
@@ -69,7 +70,7 @@ function App() {
         <MyCard></MyCard>
       </div>
       <div style={{ gridColumn: 2, gridRow: 4 }}>
-        <h3>App</h3>
+        <Chart></Chart>
       </div>
     </Container>
   );
